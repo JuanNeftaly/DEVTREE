@@ -4,7 +4,7 @@
   "description": "Firts proyect with express and TypeScript",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.ts"
   },
   "author": "Juan Neftaly",
   "license": "ISC",
@@ -12,6 +12,8 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
