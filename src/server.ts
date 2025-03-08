@@ -1,10 +1,9 @@
 import express from 'express' // ESM importacion
+import router from './router'
 
 const app = express() // instancia de express 
 
-// ROUTING 
-app.get('/', (req, res) => {
-	res.send('Hola papu')
-})
+app.use('/api', router)
+
 
 export default app
