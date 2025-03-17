@@ -13,6 +13,9 @@ router.post('/auth/register', async (req, res) =>{
 	
 	const user = new User(req.body)
 	await user.save()
+
+	//terminar
+	res.send('User register')
 })
 
 export default router
