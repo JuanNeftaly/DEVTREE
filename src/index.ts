@@ -1,8 +1,9 @@
-import server from './server'
+import colors from 'colors' // dependencia
+import server from './server' 
 
 const port = process.env.PORT || 4000
 
 server.listen(port, () => {
-	console.log('Servidor funcionando en el puerto:', port);
+	console.log(colors.blue.bold('Servidor funcionando en el puerto:'), port);
 })
 
