@@ -10,7 +10,6 @@ connectDB()
 // leer data
 app.use(express.json())
 
-app.use('/api', router)
-
+app.use('/', router)
 
 export default app
